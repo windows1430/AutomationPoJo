@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="automationPOJO"
+  id="myeclipse.1338887182837"
+  context-root="/automationPOJO"
+  j2ee-spec="5.0"
+  archive="automationPOJO.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

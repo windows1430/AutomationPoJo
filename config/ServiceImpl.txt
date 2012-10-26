@@ -1,0 +1,38 @@
+
+import com.gst.core.base.Page;
+import java.util.Map;
+import com.zxc.rty.##CLASS##;
+
+public ##CLASS##ServiceImpl implements ##CLASS##Service{
+	
+	/**
+	 * 
+	 * @param map
+	 * @param pageIndex
+	 * @param pageSize
+	 * @return
+	 * @throws Exception
+	 */
+	public Page get##CLASS##List(Map map,int pageIndex,int pageSize) throws Exception{
+		//return baseDAO.findListByMap(FIX + "get##CLASS##Count", FIX+"get##CLASS##List", map, pageIndex, pageSize);
+	};
+	/**
+	 * 
+	 * @param dsData
+	 * @param dsLines
+	 * @throws Exception
+	 */
+	public void save(DataSet dsData,String dsLines[])throws Exception{
+	
+	
+	
+	};
+	/**
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	public ##CLASS## find##CLASS##Object(Map keyIds) throws Exception{
+		return null;
+	};
+}

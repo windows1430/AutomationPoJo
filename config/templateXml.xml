@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+  "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="##TT##Space">
+	<cacheModel id="##CachModel##" type="OSCACHE">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="##TT##Space.insert##CLASS##" />
+		<flushOnExecute statement="##TT##Space.update##CLASS##" />
+		<flushOnExecute statement="##TT##Space.del##CLASS##" />
+		<property name="size" value="1000"/>
+	</cacheModel>
+	<typeAlias alias="##ALIAS##" type="##package##.##CLASS##" />
+
+	<select id="get##CLASS##List" parameterClass="##ALIAS##"
+		resultClass="##ALIAS##" cacheModel="##CachModel##">
+		##SQLSELECTALL##
+	</select>
+	
+	<select id="get##CLASS##Count" parameterClass="##ALIAS##"
+		resultClass="int" cacheModel="##CachModel##">
+		##SQLCOUNT##
+	</select>
+	
+	<insert id="insert##CLASS##" parameterClass="##ALIAS##">
+		##SQLINSERT##
+
+	</insert>
+	
+	<update id="update##CLASS##" parameterClass="##ALIAS##">
+		##SQLUPDATE##
+	</update>
+
+	<delete id="del##CLASS##" parameterClass="##ALIAS##">
+		##SQLDEL##
+	</delete>
+
+</sqlMap>

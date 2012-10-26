@@ -1,0 +1,33 @@
+
+import java.util.Map;
+import org.marmot.view.DataSet;
+import com.gst.core.base.Page;
+import com.zxc.rty.##CLASS##
+
+public interface ##CLASS##Service {
+	/**
+	 *  
+	 * @param map
+	 * @param pageIndex
+	 * @param pageSize
+	 * @return
+	 * @throws Exception
+	 */
+	public Page get##CLASS##List(Map map,int pageIndex,int pageSize) throws Exception;
+	
+	/**
+	 * 
+	 * @param dsData
+	 * @param dsLines
+	 * @throws Exception
+	 */
+	public void save(DataSet dsData,String dsLines[])throws Exception;
+	
+	
+	/**
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	public ##CLASS## find##CLASS##Object(Map keyIds) throws Exception;
+}
